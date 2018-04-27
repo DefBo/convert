@@ -69,11 +69,44 @@
 						<span class="navbar-item__title">Scrapbook</span>
 					</a>
 
-					<div class="navbar-search-group">
-						<svg class="feather feather-lg">
-						  <use xlink:href="img/sprite/feather-sprite.svg#search"/>
-						</svg>
-						<input type="text" class="search-field" placeholder="Search...">
+					<div class="navbar-user-group">
+
+						<div class="dropdown show">
+
+							<a href="#" class="user-link" id="user-link">
+								
+								<img class="user-avatar" src="img/avatar.png" alt="User">
+								<span>George Bennett</span>
+								<svg class="feather">
+								  <use xlink:href="img/sprite/feather-sprite.svg#chevron-down"/>
+								</svg>
+								
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-user">
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#user"/>
+									</svg>
+									<span>Edit profile</span>
+								</a>
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#settings"/>
+									</svg>
+									<span>Settings</span>
+								</a>
+								<div class="divider-line"></div>
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#power"/>
+									</svg>
+									<span>Log out</span>
+								</a>
+							</div>
+
+						</div>
+
 					</div>
 					
 				</div>
@@ -153,7 +186,7 @@
 						
 						<div class="custom-card__header">
 
-							<h1 class="custom-card__title">Landers</h1>
+							<!-- <h1 class="custom-card__title">Landers</h1> -->
 
 							<div class="custom-card__header-btngroup">
 
@@ -220,6 +253,12 @@
 											  <use xlink:href="img/sprite/feather-sprite.svg#copy"/>
 											</svg>
 											<span class="custom-card__header-btn-title">Duplicate view</span>
+										</a>
+										<a href="#" class="dropdown-menu-view__item">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#save"/>
+											</svg>
+											<span class="custom-card__header-btn-title">Save current view</span>
 										</a>
 										<a href="#" class="dropdown-menu-view__item">
 											<svg class="feather feather-lg">
@@ -685,8 +724,6 @@
 		</div>
 	</div>
 	<!-- Card End -->
-
-	
 
 	<script src="js/scripts.min.js"></script>
 
