@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Leokwah</title>
+	<title>Convert</title>
 	<meta name="description" content="Landing page building platform">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,25 @@
 </head>
 
 <body>
+
+	<!-- Preloader Start -->
+	<div id="page-preloader" class="preloader">
+		<div class="sk-fading-circle">
+			<div class="sk-circle1 sk-circle"></div>
+			<div class="sk-circle2 sk-circle"></div>
+			<div class="sk-circle3 sk-circle"></div>
+			<div class="sk-circle4 sk-circle"></div>
+			<div class="sk-circle5 sk-circle"></div>
+			<div class="sk-circle6 sk-circle"></div>
+			<div class="sk-circle7 sk-circle"></div>
+			<div class="sk-circle8 sk-circle"></div>
+			<div class="sk-circle9 sk-circle"></div>
+			<div class="sk-circle10 sk-circle"></div>
+			<div class="sk-circle11 sk-circle"></div>
+			<div class="sk-circle12 sk-circle"></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
 
 	<!-- Navigation Menu Start -->
 	<nav class="navbar navbar-shadow">
@@ -69,79 +88,46 @@
 						<span class="navbar-item__title">Scrapbook</span>
 					</a>
 
-					<div class="navbar-search-group">
-						<svg class="feather feather-lg">
-						  <use xlink:href="img/sprite/feather-sprite.svg#search"/>
-						</svg>
-						<input type="text" class="search-field" placeholder="Search...">
-					</div>
-					
+					<div class="navbar-user-group">
+
+						<div class="dropdown show">
+
+							<a href="#" class="user-link" id="user-link">	
+								<img class="user-avatar" src="img/avatar.png" alt="User">
+								<span>George Bennett</span>
+								<svg class="feather">
+								  <use xlink:href="img/sprite/feather-sprite.svg#chevron-down"/>
+								</svg>	
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-user">
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#user"/>
+									</svg>
+									<span>Edit profile</span>
+								</a>
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#settings"/>
+									</svg>
+									<span>Settings</span>
+								</a>
+								<div class="divider-line"></div>
+								<a href="login.html" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#power"/>
+									</svg>
+									<span>Log out</span>
+								</a>
+							</div>
+						</div>
+					</div>		
 				</div>
 			</div>
 		</div>
 	</nav>
 	<!-- Navigation Menu End -->
-
-	<!-- Action Buttons Menu Start -->
-	<div class="action-menu">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
-						</svg>
-						<span class="action-menu-item__title">View</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#edit-2"/>
-						</svg>
-						<span class="action-menu-item__title">Edit</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#edit"/>
-						</svg>
-						<span class="action-menu-item__title">CK</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#copy"/>
-						</svg>
-						<span class="action-menu-item__title">Copy</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#folder"/>
-						</svg>
-						<span class="action-menu-item__title">Assign folder</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
-						</svg>
-						<span class="action-menu-item__title">Delete</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#upload"/>
-						</svg>
-						<span class="action-menu-item__title">Deploy</span>
-					</a>
-
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Action Buttons Menu End -->
 
 	<!-- Card Start -->
 	<div class="custom-card-section">
@@ -150,17 +136,16 @@
 				<div class="col-12">
 					
 					<div class="custom-card">
-						
-						
-					</div>
 
+						<div class="custom-card__body">	
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Card End -->
-
-	
 
 	<script src="js/scripts.min.js"></script>
 

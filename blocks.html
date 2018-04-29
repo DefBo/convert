@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Leokwah</title>
+	<title>Convert</title>
 	<meta name="description" content="Landing page building platform">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,25 @@
 </head>
 
 <body>
+
+	<!-- Preloader Start -->
+	<div id="page-preloader" class="preloader">
+		<div class="sk-fading-circle">
+			<div class="sk-circle1 sk-circle"></div>
+			<div class="sk-circle2 sk-circle"></div>
+			<div class="sk-circle3 sk-circle"></div>
+			<div class="sk-circle4 sk-circle"></div>
+			<div class="sk-circle5 sk-circle"></div>
+			<div class="sk-circle6 sk-circle"></div>
+			<div class="sk-circle7 sk-circle"></div>
+			<div class="sk-circle8 sk-circle"></div>
+			<div class="sk-circle9 sk-circle"></div>
+			<div class="sk-circle10 sk-circle"></div>
+			<div class="sk-circle11 sk-circle"></div>
+			<div class="sk-circle12 sk-circle"></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
 
 	<!-- Navigation Menu Start -->
 	<nav class="navbar navbar-shadow">
@@ -69,11 +88,44 @@
 						<span class="navbar-item__title">Scrapbook</span>
 					</a>
 
-					<div class="navbar-search-group">
-						<svg class="feather feather-lg">
-						  <use xlink:href="img/sprite/feather-sprite.svg#search"/>
-						</svg>
-						<input type="text" class="search-field" placeholder="Search...">
+					<div class="navbar-user-group">
+
+						<div class="dropdown show">
+
+							<a href="#" class="user-link" id="user-link">
+								
+								<img class="user-avatar" src="img/avatar.png" alt="User">
+								<span>George Bennett</span>
+								<svg class="feather">
+								  <use xlink:href="img/sprite/feather-sprite.svg#chevron-down"/>
+								</svg>
+								
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-user">
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#user"/>
+									</svg>
+									<span>Edit profile</span>
+								</a>
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#settings"/>
+									</svg>
+									<span>Settings</span>
+								</a>
+								<div class="divider-line"></div>
+								<a href="login.html" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#power"/>
+									</svg>
+									<span>Log out</span>
+								</a>
+							</div>
+
+						</div>
+
 					</div>
 					
 				</div>
@@ -104,13 +156,6 @@
 
 					<a href="#" class="action-menu-item">
 						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#edit"/>
-						</svg>
-						<span class="action-menu-item__title">CK</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
 						  <use xlink:href="img/sprite/feather-sprite.svg#copy"/>
 						</svg>
 						<span class="action-menu-item__title">Copy</span>
@@ -130,13 +175,6 @@
 						<span class="action-menu-item__title">Delete</span>
 					</a>
 
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#upload"/>
-						</svg>
-						<span class="action-menu-item__title">Deploy</span>
-					</a>
-
 				</div>
 			</div>
 		</div>
@@ -151,16 +189,306 @@
 					
 					<div class="custom-card">
 						
-						
-					</div>
+						<div class="custom-card__header">
 
+							<!-- <h1 class="custom-card__title">Landers</h1> -->
+
+							<div class="custom-card__header-btngroup">
+
+								<div class="dropdown show">
+
+									<a href="#" class="custom-card__header-btn" id="view-link" href="#">
+										<svg class="feather feather-lg">
+										  <use xlink:href="img/sprite/feather-sprite.svg#grid"/>
+										</svg>
+										<span class="custom-card__header-btn-title" id="view-title">Main View</span>
+										<input class="view-input" type="text" value="Main View" style="display: none">
+									</a>
+
+									<div class="dropdown-menu dropdown-menu-view">
+
+										<a href="#" class="dropdown-menu-view__item dropdown-menu-view__item--active">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#grid"/>
+											</svg>
+											<span class="custom-card__header-btn-title" id="view-sub-title">Main View</span>
+										</a>
+
+										<a href="#" class="dropdown-menu-view__item">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#layers"/>
+											</svg>
+											<span class="custom-card__header-btn-title">Test View 1</span>
+										</a>
+
+										<a href="#" class="dropdown-menu-view__item">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#list"/>
+											</svg>
+											<span class="custom-card__header-btn-title">Test View 2</span>
+										</a>
+
+									</div>
+								</div>
+
+								<div class="dropdown show">
+
+									<a href="#" class="custom-card__header-btn" id="more-link">
+										<svg class="feather feather-lg">
+										  <use xlink:href="img/sprite/feather-sprite.svg#more-vertical"/>
+										</svg>
+									</a>
+
+									<div class="dropdown-menu dropdown-menu-more">
+										
+										<a href="#" class="dropdown-menu-view__item">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#plus-circle"/>
+											</svg>
+											<span class="custom-card__header-btn-title">Add view</span>
+										</a>
+
+										<a href="#" class="dropdown-menu-view__item" id="rename-view-btn">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#edit-3"/>
+											</svg>
+											<span class="custom-card__header-btn-title">Rename view</span>
+										</a>
+
+										<a href="#" class="dropdown-menu-view__item">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#copy"/>
+											</svg>
+											<span class="custom-card__header-btn-title">Duplicate view</span>
+										</a>
+
+										<a href="#" class="dropdown-menu-view__item">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#save"/>
+											</svg>
+											<span class="custom-card__header-btn-title">Save current view</span>
+										</a>
+
+										<a href="#" class="dropdown-menu-view__item">
+											<svg class="feather feather-lg">
+											  <use xlink:href="img/sprite/feather-sprite.svg#trash"/>
+											</svg>
+											<span class="custom-card__header-btn-title">Delete view</span>
+										</a>
+
+									</div>
+
+								</div>
+
+								<div class="dropdown show">
+								
+									<a href="#" class="custom-card__header-btn" id="filter-link">
+										<svg class="feather feather-lg">
+										  <use xlink:href="img/sprite/feather-sprite.svg#sliders"/>
+										</svg>
+										<span class="custom-card__header-btn-title">Filter</span>
+									</a>
+
+									<div class="dropdown-menu dropdown-menu-filter">
+										
+										<div class="dropdown-menu-filter__single-filter">
+
+											<a href="#" class="remove-filter-btn">
+												<svg class="feather feather-lg">
+												  <use xlink:href="img/sprite/feather-sprite.svg#x-circle"/>
+												</svg>
+											</a>
+												<span>Where</span>
+
+												<select name="fieldselect" id="fieldselect">
+													<option value="Date created">Date created</option>
+													<option value="Lander name">Lander name</option>
+													<option value="Template">Template</option>
+													<option value="Tags">Tags</option>
+													<option value="Last edited">Last edited</option>
+												</select>
+
+												<select name="optionselect" id="optionselect">
+													<option value="contains">contains</option>
+													<option value="does not contain">doesn't contain</option>
+													<option value="is">is</option>
+													<option value="is not">isn't</option>
+													<option value="is empty">is empty</option>
+													<option value="is not empty">isn't empty</option>
+												</select>
+												<input type="text" class="filter-input">
+										</div>
+
+										<div class="dropdown-menu-filter__addfilter">
+											
+											<a href="#" class="remove-filter-btn">
+												<svg class="feather feather-lg">
+												  <use xlink:href="img/sprite/feather-sprite.svg#plus"/>
+												</svg>
+												<span>Add filter</span>
+											</a>
+
+										</div>
+
+									</div>
+
+								</div>
+								
+								<div class="dropdown show">
+
+									<a href="#" class="custom-card__header-btn" id="sort-link">
+										<svg class="feather feather-lg">
+										  <use xlink:href="img/sprite/feather-sprite.svg#shuffle"/>
+										</svg>
+										<span class="custom-card__header-btn-title">Sort</span>
+									</a>
+
+									<div class="dropdown-menu dropdown-menu-sort">
+										
+										<div class="dropdown-menu-sort__single-sort">
+											<span>Sort by</span>
+											<select name="fieldselect" id="fieldselect">
+												<option value="Date created">Date created</option>
+												<option value="Lander name">Lander name</option>
+												<option value="Template">Template</option>
+												<option value="Tags">Tags</option>
+												<option value="Last edited">Last edited</option>
+											</select>
+											<span>from</span>
+											<div class="can-toggle can-toggle--size-small">
+												<input id="a" type="checkbox">
+												<label for="a">
+											    	<div class="can-toggle__switch" data-checked="Z &rarr; A" data-unchecked="A &rarr; Z"></div>
+												</label>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="custom-card__body">
+
+							<table class="table custom-table" id="example">
+							  <thead>
+							    <tr>
+							      <th scope="col" class="no-sort"></th>
+							      <th scope="col">Date created</th>
+							      <th scope="col">Name</th>
+							      <th scope="col">Tags</th>
+							      <th scope="col">Last edited</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+
+							    <tr class="blocks-tr">
+							      <td scope="row">	
+								    <div class="custom-checkbox">
+								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check1" name="check" />
+								      <label for="check1"></label>
+								    </div>
+							      </td>
+							      <td>100 days</td>
+							      <td>getFormattedDay</td>
+							      <td class="tag-cell">
+							      	<div class="tag tag--blue">tag 1</div>
+							      	<div class="tag tag--yellow">tag 2</div>
+							      </td>
+							      <td>will</td>
+							    </tr>
+
+							    <tr class="blocks-tr">
+							      <td scope="row">	
+								    <div class="custom-checkbox">
+								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check1" name="check" />
+								      <label for="check1"></label>
+								    </div>
+							      </td>
+							      <td>97 days</td>
+							      <td>fast-timer</td>
+							      <td class="tag-cell">
+							      	<div class="tag tag--blue">tag 1</div>
+							      	<div class="tag tag--yellow">tag 2</div>
+							      	<div class="tag tag--green">tag 3</div>
+							      </td>
+							      <td>will</td>
+							    </tr>
+
+							    <tr class="blocks-tr">
+							      <td scope="row">	
+								    <div class="custom-checkbox">
+								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check1" name="check" />
+								      <label for="check1"></label>
+								    </div>
+							      </td>
+							      <td>97 days</td>
+							      <td>back-button</td>
+							      <td class="tag-cell">
+							      	<div class="tag tag--blue">tag 1</div>
+							      	<div class="tag tag--yellow">tag 2</div>
+							      	<div class="tag tag--green">tag 3</div>
+							      </td>
+							      <td>will</td>
+							    </tr>
+
+							    <tr class="blocks-tr">
+							      <td scope="row">	
+								    <div class="custom-checkbox">
+								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check1" name="check" />
+								      <label for="check1"></label>
+								    </div>
+							      </td>
+							      <td>97 days</td>
+							      <td>Voluum campaign link</td>
+							      <td class="tag-cell">
+							      	<div class="tag tag--blue">tag 1</div>
+							      </td>
+							      <td>george</td>
+							    </tr>
+
+							    <tr class="blocks-tr">
+							      <td scope="row">	
+								    <div class="custom-checkbox">
+								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check1" name="check" />
+								      <label for="check1"></label>
+								    </div>
+							      </td>
+							      <td>99 days</td>
+							      <td>Normal Top Scripts</td>
+							      <td class="tag-cell">
+							      	<div class="tag tag--blue">tag 1</div>
+							      	<div class="tag tag--yellow">tag 2</div>
+							      	<div class="tag tag--green">tag 3</div>
+							      </td>
+							      <td>george</td>
+							    </tr>
+
+							    <tr class="blocks-tr">
+							      <td scope="row">	
+								    <div class="custom-checkbox">
+								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check1" name="check" />
+								      <label for="check1"></label>
+								    </div>
+							      </td>
+							      <td>99 days</td>
+							      <td>Facebook Pixel</td>
+							      <td class="tag-cell">
+							      	<div class="tag tag--blue">tag 1</div>
+							      	<div class="tag tag--yellow">tag 2</div>
+							      </td>
+							      <td>george</td>
+							    </tr>
+
+							  </tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Card End -->
-
-	
 
 	<script src="js/scripts.min.js"></script>
 
