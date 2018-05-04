@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Convert</title>
+	<meta name="description" content="Landing page building platform">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#fff">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body style="padding-bottom: 0">
+
+	<!-- Preloader Start -->
+	<div id="page-preloader" class="preloader">
+		<div class="sk-fading-circle">
+			<div class="sk-circle1 sk-circle"></div>
+			<div class="sk-circle2 sk-circle"></div>
+			<div class="sk-circle3 sk-circle"></div>
+			<div class="sk-circle4 sk-circle"></div>
+			<div class="sk-circle5 sk-circle"></div>
+			<div class="sk-circle6 sk-circle"></div>
+			<div class="sk-circle7 sk-circle"></div>
+			<div class="sk-circle8 sk-circle"></div>
+			<div class="sk-circle9 sk-circle"></div>
+			<div class="sk-circle10 sk-circle"></div>
+			<div class="sk-circle11 sk-circle"></div>
+			<div class="sk-circle12 sk-circle"></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- Navigation Menu Start -->
+	<nav class="navbar navbar-shadow">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+
+					<a href="index.html" class="navbar-item">
+						<svg class="feather">
+						  <use xlink:href="img/sprite/feather-sprite.svg#layout"/>
+						</svg>
+						<span class="navbar-item__title">Landers</span>
+					</a>
+
+					<a href="blocks.html" class="navbar-item">
+						<svg class="feather">
+						  <use xlink:href="img/sprite/feather-sprite.svg#box"/>
+						</svg>
+						<span class="navbar-item__title">Blocks</span>
+					</a>
+
+					<a href="templates.html" class="navbar-item">
+						<svg class="feather">
+						  <use xlink:href="img/sprite/feather-sprite.svg#file"/>
+						</svg>
+						<span class="navbar-item__title">Templates</span>
+					</a>
+
+					<a href="content.html" class="navbar-item">
+						<svg class="feather">
+						  <use xlink:href="img/sprite/feather-sprite.svg#image"/>
+						</svg>
+						<span class="navbar-item__title">Content</span>
+					</a>
+
+					<a href="scrapbook.html" class="navbar-item navbar-itme--special">
+						<svg class="feather">
+						  <use xlink:href="img/sprite/feather-sprite.svg#book-open"/>
+						</svg>
+						<span class="navbar-item__title">Scrapbook</span>
+					</a>
+
+					<div class="navbar-user-group">
+
+						<div class="dropdown show">
+
+							<a href="#" class="user-link" id="user-link">		
+								<img class="user-avatar" src="img/avatar.png" alt="User">
+								<span>George Bennett</span>
+								<svg class="feather">
+								  <use xlink:href="img/sprite/feather-sprite.svg#chevron-down"/>
+								</svg>	
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-user">
+
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#user"/>
+									</svg>
+									<span>Edit profile</span>
+								</a>
+
+								<a href="#" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#settings"/>
+									</svg>
+									<span>Settings</span>
+								</a>
+
+								<div class="divider-line"></div>
+
+								<a href="login.html" class="dropdown-menu-user-link">
+									<svg class="feather">
+									  <use xlink:href="img/sprite/feather-sprite.svg#power"/>
+									</svg>
+									<span>Log out</span>
+								</a>
+
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navigation Menu End -->
+
+	<!-- Card Start -->
+	<div class="custom-card-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-9">
+					<div class="custom-card">
+						
+						<h1 class="editor-title">
+							<a href="index.html" class="editor-title__link"> &lt; Landers /</a>
+							<span>Edit</span>
+						</h1>
+
+						<form class="codemirror-editor">
+							<textarea id="codemirror-editor_textarea">
+<?php //voluum campaign link
+$link = "http://t.tchnl.com/" . $_GET['vol'] ."?ad_id=" . $_GET['ad_id'] . "&account=" . $_GET['account'] . "&offername=" . $_GET['offername'] . "&lander=" . $_GET['lander'] . "&campaign=" . $_GET['campaign'] . "&adset=" . $_GET['adset'];
+?>
+
+<?php //Written By G - Careful! Voluum impression pixel
+$tracking = "<img style='position:absolute; visibility:hidden' src='https://c6mik.voluumtrk2.com/impression/" . $_GET['vol'] . "?ad_id=" . $_GET['ad_id'] . "&account=" . $_GET['account'] . "&lander=" . $_GET['lander'] . "&campaign=" . $_GET['campaign'] . "&adset=" . $_GET['adset'] . "&offername=" . $_GET['offername'] . "'/>";
+echo $tracking;
+?>
+
+<?php //if offer1 tag missing use this token as offer name
+if ($_GET['offername']=="") {
+$offername = "THIS AMAZING OFFER";
+} else {
+$offername = $_GET['offername'];
+}
+?>
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Russia</title>
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<meta content="" name="keywords">
+	<meta content="initial-scale=1.0, user-scalable=no" name="viewport">
+	<link href="https://landings-75c2.kxcdn.com/Landers/stylesheet/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="https://landings-75c2.kxcdn.com/Landers/stylesheet/main.css" rel="stylesheet">
+	<style>
+	#bottombar {
+	       position: fixed;
+	       bottom: 0;
+	       left: 0;
+	       right: 0;
+	       background: #fff;
+	       padding: 10px;
+	       font-size: 18px;
+	       vertical-align: middle;
+	       line-height: 2em;
+	       display:none;
+	       border-top:1px solid #853854;
+	       opacity: 0.9;
+	   }
+	   .expire-text {
+	       font-weight: bold;
+	       font: "Roboto","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	       color: #8b8c8e;
+	       text-align: center;
+	   }
+	   .btn-warning {
+	       color: #fff;
+	       background-color: #853854 ;
+	       border-color: #853854;
+	       border-radius: 7px 7px 7px 7px;
+	       -moz-border-radius: 7px 7px 7px 7px;
+	       -webkit-border-radius: 7px 7px 7px 7px;
+	       border: 0px solid #000000;
+	       padding:8px;
+	   }
+	   #demonote { display: none; }
+	</style>
+
+<script>
+	function getFormattedDay(today)
+	{
+	    var week = new Array('Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота');
+	    var day  = week[today.getDay()];
+	    return day;
+	}
+
+	function getFormattedDayNumber(today)
+	{
+	    var dd   = today.getDate();
+	    if(dd<10)  { dd='0'+dd }
+	    return dd;
+	}
+
+	function getFormattedMonth(today)
+	{
+	    var year = new Array('январь', 'февраль', 'Март', 'Апрель ', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь');
+	    var mm  = year[today.getMonth()];
+	    if(mm<10)  { mm='0'+mm }
+	    return mm;
+	}
+
+	function getFormattedYear(today)
+	{
+	    var yyyy = today.getFullYear();
+	    return yyyy;
+	}
+
+	var date = new Date();
+	var day_text = getFormattedDay(date);
+	var day_number = getFormattedDayNumber(date);
+	var month_text = getFormattedMonth(date);
+	var year_number = getFormattedYear(date);
+</script>
+
+
+	<meta content="no" http-equiv="imagetoolbar">
+	<style type="text/css">
+	<!-- input,textarea{-webkit-touch-callout:default;-webkit-user-select:auto;-khtml-user-select:auto;-moz-user-select:text;-ms-user-select:text;user-select:text} *{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;user-select:none} -->
+	</style>
+	<style media="print" type="text/css">
+	<!-- body{display:none} -->
+	</style>
+
+</head>
+
+<body>
+	<div class="container class-top">
+		<nav class="navbar nav2">
+			<div class="row" style="position: relative;">
+				<img alt="" class="logo-new" src="https://landings-75c2.kxcdn.com/Landers/stylesheet/logo.png">
+
+				<div class="special-block" style="border: 2px solid #000; margin: 0 15px;">
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8" id="content">
+
+            	<header>
+					<h1>Этот лихач шокировал полицейских, но не своим вождением.</h1>
+
+					<div class="meta-header row">
+						<div class="col-sm-8">
+							<h5 class="meta-date" style="margin: 0; margin-top: 9px;">
+							</h5>
+						</div>
+					</div>
+				</header>
+
+<p style="text-align: center;"><img style='max-width:100%' alt="" src="https://landings-75c2.kxcdn.com/granny-sml141242.jpg" style="width: 500px; height: 262px;" /></p>
+
+<p>Вчера утром Борис Лукин, a 24-летний техпредприниматель, заработавший 32 404,69 миллиона рублей на разработке и продаже мобильных приложений, был остановлен за вождение в нетрезвом состоянии. Чтобы выйти из этой ситуации, он как бы невзначай сказал полицейскому, что даст ему бесплатный доступ и 150 бесплатных спинов (вращений) (стоимостью 13 960,20 рублей) до полуночи <script>document.write(day_text);</script>, чтобы попробовать его новую игру.</p>
+
+<p>Лукин уверил полицейского в том, что «игра в течение нескольких минут может превратить его или любого другого человека с мобильным телефоном в миллионера». </p>
+
+<p>Заинтересовавшись, полицейский выяснил, что Лукин в действительности создал абсолютно новую игру, в которой каждые 12 секунд можно выигрывать по 390 952 миллиона рублей – без какой-либо стратегии или навыков, и сумма, которую можно выиграть, постоянно увеличивается.</p>
+
+<center><img style='max-width:100%' alt="" src="https://landings-75c2.kxcdn.com/img5184476.png" style="max-width:100%" /></center>
+
+<p><em>Вот это Валентин Соболев из Самары, который выиграл 258 438 932,28 рубля на прошлой неделе, при этом не вложив ни копейки. И теперь он прекрасно проводит время на островах Таиланда.</em></p>
+
+<p>«Классная игра для тех, кто не хочет ходить на работу и постоянно трудиться», – говорит Лукин.</p>
+
+<p>«Вы недовольны своей жизнью? Живете от зарплаты до зарплаты, и после оплаты всех квитанций денег уже не остается? Приходится ли вам подумать дважды, прежде чем купить хорошие вещи для себя и своей семьи?»</p>
+
+<p>«Я гарантирую, что вы бросите свою работу, как только сыграете в эту игру и одержите победу. Если хотите бесплатно воспользоваться такой отличной возможностью выиграть десятки миллионов рублей за считанные минуты, сегодня – ваш последний шанс. Если вам достанется крупный джекпот, можете забыть обо всех ваших проблемах, собирать чемоданы и отправляться на солнечный карибский остров, где будете потягивать коктейли весь день и так до конца вашей жизни», – добавляет Лукин.</p>
+
+<p><a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> – уникальное онлайн-казино, которым управляет компания Лукина. Это ведущее онлайн-казино следующего поколения, и здесь на кону – огромные джекпоты. Казино использует новаторский алгоритм, который генерирует прибыль не за счет игроков, а в результате торговли на фондовой бирже.</p>
+
+<p><a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> предлагает некоторые восхитительные игры, в которых шанс получить миллионы в 127 раз выше, чем в любой другой стандартной интернет-игре с джекпотом. Все игральные автоматы <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> привязаны к арбитражному алгоритму, ведущему торговлю на 74 фондовых биржах по всему миру и генерирующему доход в десятки миллионов рублей каждый день.</p>
+
+<p>Вам не нужно владеть сложными стратегиями или специальными навыками, чтобы играть в игровые автоматы в <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a>. От вас требуется одно – приятно провести время, вращая их и позволяя алгоритму делать наилучшим образом все остальное.</p>
+
+<p>Посмотрите это замечательное видео, которое записал один из игроков. В нем вы увидите, как легко выигрывать в новейших онлайн-казино, которые привязаны к особенному, приносящему прибыль алгоритму.</p>
+
+<p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/j1mcQyxtsEM" width="100%"></iframe></p>
+
+<p>Часть прибыли, ежедневно генерируемой посредством алгоритма, направляется в джекпот в <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a>, так как Лукин хочет поделиться своим богатством с другими людьми во всем мире; с теми, кому повезло меньше.</p>
+
+<p>Сам Лукин родился в очень бедной семье. В возрасте 16 лет он работал по 12 часов в день, чтобы помочь своим родным.</p>
+
+<p>«Я больше не беспокоюсь по поводу денег. У меня их так много, что я просто никогда не смогу столько потратить. Хочу дать часть денег другим людям, предлагая им по-настоящему простой способ мгновенного превращения в миллионера без необходимости что-либо делать, так как большинство людей и без этого усердно работает каждый день», – говорит Лукин.</p>
+
+<p>«<a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> – это реально прорыв, потому что в среднем каждые 12 минут кто-то выигрывает джекпот и вступает в беззаботную и беспечную жизнь, в которой проблем с деньгами не существует», – добавляет Лукин.</p>
+
+<p>Hall of Gods – это одна из популярных игр в <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a>, с ее помощью все вышеописанное может стать реальностью. Игра состоит из спинов (вращений), и каждый спин способен принести миллионы. Каждая игра длится всего лишь несколько секунд, но подразумевает высокую степень вероятности выиграть денежные суммы в размере от нескольких миллионов до нескольких сотен миллионов рублей.</p>
+
+<p>Молодой миллионер предлагает 150 бесплатных спинов до конца дня. «Я хочу дать каждому бесплатный шанс стать богачом», – говорит Борис Лукин.</p>
+
+<p>Лукин сдержал свое слово: игроки выиграли примерно 7 922,58 миллиона рублей в <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> с момента его открытия в начале этого года. А за последнюю неделю 2 игрока выиграли приблизительно 223 304 832,75 рубля каждый в <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a></p>
+
+<p>Одного игрока зовут Валентин Соболев – в верхней части этой статьи. Его выигрыш на прошлой неделе составил 258 438 932,28 рубля, а размер инвестиций – ноль.</p>
+
+<center><img style='max-width:100%' alt="" src="https://landings-75c2.kxcdn.com/rubles_in_lv.jpg" style="max-width:100%" /></center>
+
+<p><em>Второй удачливый игрок – Маргарита Ефремова из Тулы. Она выиграла 228 889 308,04 рублей, играя в <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> на протяжении 2 недель и вложив 949,56 рублей. Она бросила свою работу в тот же день, когда выигрыш был переведен на ее банковский счет, и поделилась этой фотографией в социальных медиа.</em></p>
+
+<p>«Вы получите деньги очень быстро, если выиграете – вам лишь нужно выбрать один из имеющихся способов оплаты, и деньги появятся у вас в течение 24 часов. После этого можете использовать их, как только пожелаете», – уверяет Лукин.</p>
+
+<p>Лукин также упоминает о том, что несовершеннолетним играть запрещено: «<a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> не допускает игроков младше 18 лет в соответствии с российским законом. По этой причине мы требуем верификации возраста игрока перед снятием средств. Чтобы пройти верификацию, предусмотрена плата в размере 626.87 рублей до того, как вы затребуете выплату выигрыша».</p>
+
+<p>Чтобы содействовать законному участию, <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> теперь предлагает 150 бесплатных спинов после верификации. Это означает следующее: только что зарегистрировавшиеся, то есть такие как вы, смогут воспользоваться 150 бонусными спинами и верификацией возраста всего за 626.87 рублей.</p>
+
+<p>«Однако же мы не можем нарушать закон, поэтому даем все это только первым 200 только что зарегистрировавшимся участникам, – говорит Лукин. – Как только вы получите бесплатные спины, у вас появится больше шансов выиграть миллионы и навсегда изменить свою жизнь!» – добавляет он. Регистрация и верификация, как правило, занимают менее двух минут.</p>
+
+<p>При том, что специальный алгоритм <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> привлекает удачу на вашу сторону, мы, очевидно, не сможем помочь вам чем-то еще, если вы сами себе не поможете, поэтому действуйте быстро, так как данное специальное предложение долго длиться не будет.</p>
+
+<p style="text-align: center;"><strong>«Самый большой риск – вообще не рисковать», – Марк Цукерберг.</strong></p>
+
+<p><a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> – это лицензированное русское казино, и любые выигрыши являются законными, если вы достигли 18-летнего возраста.</p>
+
+<p><strong>Чтобы получить бесплатный бонус, который может навсегда изменить вашу жизнь, выполните нижеуказанных 3 шага:</strong></p>
+
+<p>1. Попадите в число первых 200 человек, зарегистрировавшихся в <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a></p>
+
+<p>2. Заплатите 626.87 рублей и получите ваши 150 спинов. </p>
+
+<p>3. Выберите игру и начинайте делать вращения, чтобы сорвать крупный куш!</p>
+
+<p><p style="text-align: center;"><a class="btn-spec btn-2 btn-2c" href="<?php echo $link; ?>" onclick="click_redirect()">ДАЙТЕ МНЕ ШАНС СТАТЬ МИЛЛИОНЕРОМ ПРЯМО СЕЙЧАС! (7/200 шансов осталось)</a><br><img alt="" src="https://landings-75c2.kxcdn.com/protect.png" width="120"></p></p>
+
+<footer>
+					<div id="comments">
+						<div class="clearfix">
+							<h5 style="float: left;">Отзывы</h5>
+
+							<h5 style="float: right; color: #3B5998">Добавить отзыв</h5>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/female-1.jpg" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Евгения Ширяева</strong></p>		
+
+								<p>С ума сойти – даже моя бабушка слышала про это в новостях. Так она к тому же выиграла пару сотен рублей. Громко смеюсь…</p>
+
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/asianfemale.jpg" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Анна Маркова</strong></p>	
+
+								<p>Никогда в жизни НИЧЕГО не выигрывала, а тут – 3 дня назад, на 24-м вращении – и на тебе…</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/female-2.jpg" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Валентина Миронова</strong></p>		
+
+								<p>Вот выиграла сумму месячной квартплаты – КЛАССНО, супер ощущения!!!!!</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/male-1.jpg" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Людмила Игнатьева</strong></p>			
+
+								<p>Друг сказал, что местные букмекерские конторы закроются из-за <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a>! Удивлена, что это специальное предложение пока не получило большого распространения, ведь это шанс всей жизни </p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/male-3.jpg" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Степан Овчинников</strong></p>				
+
+								<p>Мой банковский счет только что пополнился 5-значным числом – никогда не думал, что доживу до этого дня. Рождество будет прекрасным в этом году</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/male-2.jpg" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Никита Зуев</strong></p>
+								
+								<p>Для всех новых игроков – делюсь вдохновением от моей новой гордости и развлечения!</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/female-3.jpg" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Ирина Зыкова</strong></p>				
+
+								<p>Боже мой, увидела это в новостях и подумала, что мест уже точно не осталось, так что надо торопиться</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/caucasianmale1.png" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Владимир Крылов</strong></p>
+								
+								<p>Понравилась это специальное предложение – <a href="<?php echo $link; ?>" onclick="click_redirect()"><?php echo $offername; ?></a> дает так много шансов</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/caucasianmale2.png" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Яков Гришин</strong></p>			
+
+								<p>Мой брат рассказывал мне об этом весь ужин, но я особо и не прислушивался, а потом он выиграл 55 851,44 рубль, а теперь я уж точно зарегистрируюсь…</p>
+
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/caucasianfemale1.png" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Маргарита Алексеева</strong></p>
+								
+								<p>Как хорошо, что я смогу купить кое-что для себя после оплаты всех счетов в этом месяце! Класс…</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="row">
+							<div class="col-xs-3 col-sm-2"><img class="img-responsive center-block" src="https://landings-75c2.kxcdn.com/RU/male-2.jpg" width="50">
+							</div>
+
+							<div class="col-xs-9 col-sm-10">
+								<p style="color: #3B5998"><strong>Юрий Давыдов</strong></p>			
+
+								<p>Моя жизнь изменилась навсегда. Мне так повезло – надеюсь, что другим тоже улыбнется тут удача.</p>
+							</div>
+						</div>
+
+						<hr>
+					</div>
+				</footer>
+
+				<div class="gap40">
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<br>
+			</div>
+		</div>
+	</div>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '<?php echo $_GET['pixel']; ?>');
+    fbq('track', "PageView");
+    </script>
+
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=<?php echo $_GET['pixel']; ?>&ev=PageView&noscript=1"/></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script>
+    function click_redirect() {
+      alert('Ваши 150 бесплатных спинов забронированы! **Вы почти у цели!** Внесите ваши данные на следующей странице! Ваш бесплатный аккаунт забронирован за вами только в течение 3 минут, так что торопитесь!!');
+      fbq('track', 'Lead');
+    };
+    </script>
+
+</body>
+</html>
+							</textarea>
+						</form>
+					</div>
+				</div>
+
+				<div class="col-3">
+					<div class="custom-card aside-card">
+
+						<div class="aside-card-wrap">
+
+							<div class="aside-card__item">
+								<h2 class="aside-card__title">Date created</h2>
+								<p class="aside-card__info">00 days</p>
+							</div>
+
+							<div class="aside-card__item">
+								<h2 class="aside-card__title">Lander name</h2>
+								<p class="aside-card__info">olymptrade_english_2</p>
+							</div>
+
+							<div class="aside-card__item">
+								<h2 class="aside-card__title">Template</h2>
+								<p class="aside-card__info">Online24 - UAE (Olymptrade)</p>
+							</div>
+
+							<div class="aside-card__item">
+								<h2 class="aside-card__title">Tags</h2>
+								<div class="aside-card__info">
+									<div class="tag tag--blue">tag 1</div>
+							      	<div class="tag tag--yellow">tag 2</div>
+							      	<div class="tag tag--green">tag 3</div>
+							      	<div class="tag tag--yellow">tag 2</div>
+							      	<div class="tag tag--green">tag 3</div>
+								</div>
+							</div>
+
+							<div class="aside-card__item" style="margin-top: -10px">
+								<h2 class="aside-card__title">Last edited</h2>
+								<p class="aside-card__info">George</p>
+							</div>
+
+						</div>
+
+						<div class="aside-card__save-buttons">
+
+							<div class="aside-card__buttons">
+								
+								<a href="#" class="action-menu-item">
+									<svg class="feather feather-sm">
+									  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
+									</svg>
+									<span class="action-menu-item__title">View</span>
+								</a>
+
+								<a href="#" class="action-menu-item">
+									<svg class="feather feather-sm">
+									  <use xlink:href="img/sprite/feather-sprite.svg#edit"/>
+									</svg>
+									<span class="action-menu-item__title">CK</span>
+								</a>
+
+								<a href="#" class="action-menu-item">
+									<svg class="feather feather-sm">
+									  <use xlink:href="img/sprite/feather-sprite.svg#copy"/>
+									</svg>
+									<span class="action-menu-item__title">Copy</span>
+								</a>
+
+								<a href="#" class="action-menu-item">
+									<svg class="feather feather-sm">
+									  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
+									</svg>
+									<span class="action-menu-item__title">Delete</span>
+								</a>
+
+							</div>
+
+							<div class="aside-card__save-details">
+								<svg class="feather feather-lg">
+								  <use xlink:href="img/sprite/feather-sprite.svg#save"/>
+								</svg>
+								<span>Saved 11:34 AM, 01 May 2018</span>
+							</div>
+
+							<a href="#" class="aside-card__save-deploy-button">Save & Deploy</a>
+							<a href="#" class="aside-card__save-deploy-button">Save</a>
+
+						</div>
+						
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- Card End -->
+
+	<script src="js/scripts.min.js"></script>
+
+	<script>
+		var editor = CodeMirror.fromTextArea(document.getElementById("codemirror-editor_textarea"), {
+			lineNumbers: true,
+			mode: "text/html",
+			matchBrackets: true
+		});
+	</script>
+
+</body>
+</html>

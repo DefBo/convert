@@ -61,7 +61,7 @@
 			<form action="index.html" class="form-horizontal register-form" novalidate>
 				
 				<fieldset class="position-relative form-group register-form-field">
-					<input type="text" class="form-control register-username" placeholder="Username">
+					<input type="text" class="form-control register-username" placeholder="Full name">
 					<svg class="feather">
 					  <use xlink:href="img/sprite/feather-sprite.svg#user"/>
 					</svg>
@@ -80,6 +80,26 @@
 					  <use xlink:href="img/sprite/feather-sprite.svg#lock"/>
 					</svg>
 				</fieldset>
+
+				<div class="form-group row remember-me-group">
+					<div class="col-md-6 col-12">
+						<fieldset class="remember-me-field">
+
+							<div class="custom-checkbox">
+						      <input class="custom-checkbox-input" type="checkbox" value="None" id="login-check" name="check">
+						      <label for="login-check"></label>
+						    </div>
+
+						    <label for="login-check">Remember me</label>
+
+						</fieldset>
+					</div>
+
+					<div class="col-md-6 col-12">
+						<a href="#" class="forgot-psw-link">Forgot password?</a>
+					</div>
+
+				</div>
 
 				<button type="submit" class="btn btn-outline-primary btn-block">
 					<svg class="feather feather-md">
@@ -100,7 +120,7 @@
 				</svg>
 				<span>Login</span>
 			</button>
-			
+
 		</div>
 
 	</div>
