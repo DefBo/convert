@@ -4,744 +4,227 @@
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
 
-	<title>Convert</title>
-	<meta name="description" content="Landing page building platform">
+	<title>Title</title>
+	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#fff">
-	<!-- Custom Browsers Color End -->
 
+	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,400,600,800" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
 
-	<!-- Preloader Start -->
-	<div id="page-preloader" class="preloader">
-		<div class="sk-fading-circle">
-			<div class="sk-circle1 sk-circle"></div>
-			<div class="sk-circle2 sk-circle"></div>
-			<div class="sk-circle3 sk-circle"></div>
-			<div class="sk-circle4 sk-circle"></div>
-			<div class="sk-circle5 sk-circle"></div>
-			<div class="sk-circle6 sk-circle"></div>
-			<div class="sk-circle7 sk-circle"></div>
-			<div class="sk-circle8 sk-circle"></div>
-			<div class="sk-circle9 sk-circle"></div>
-			<div class="sk-circle10 sk-circle"></div>
-			<div class="sk-circle11 sk-circle"></div>
-			<div class="sk-circle12 sk-circle"></div>
-		</div>
-	</div>
-	<!-- Preloader End -->
+	<header class="header large-header" id="large-header">
 
-	<!-- Navigation Menu Start -->
-	<nav class="navbar navbar-shadow">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
+		<canvas id="demo-canvas"></canvas>
 
-					<a href="index.html" class="navbar-item navbar-item-active">
-						<svg class="feather">
-						  <use xlink:href="img/sprite/feather-sprite.svg#layout"/>
-						</svg>
-						<span class="navbar-item__title">Landers</span>
-					</a>
+			<div class="header__top-line">
+				
+				<a href="#" class="header__top-line-logo">3DIGITAL LOGO</a>
 
-					<a href="blocks.html" class="navbar-item">
-						<svg class="feather">
-						  <use xlink:href="img/sprite/feather-sprite.svg#box"/>
-						</svg>
-						<span class="navbar-item__title">Blocks</span>
-					</a>
-
-					<a href="templates.html" class="navbar-item">
-						<svg class="feather">
-						  <use xlink:href="img/sprite/feather-sprite.svg#file"/>
-						</svg>
-						<span class="navbar-item__title">Templates</span>
-					</a>
-
-					<a href="content.html" class="navbar-item">
-						<svg class="feather">
-						  <use xlink:href="img/sprite/feather-sprite.svg#image"/>
-						</svg>
-						<span class="navbar-item__title">Content</span>
-					</a>
-
-					<a href="scrapbook.html" class="navbar-item navbar-itme--special">
-						<svg class="feather">
-						  <use xlink:href="img/sprite/feather-sprite.svg#book-open"/>
-						</svg>
-						<span class="navbar-item__title">Scrapbook</span>
-					</a>
-
-					<div class="navbar-user-group">
-
-						<div class="dropdown show">
-
-							<a href="#" class="user-link" id="user-link">		
-								<img class="user-avatar" src="img/avatar.png" alt="User">
-								<span>George Bennett</span>
-								<svg class="feather">
-								  <use xlink:href="img/sprite/feather-sprite.svg#chevron-down"/>
-								</svg>	
-							</a>
-
-							<div class="dropdown-menu dropdown-menu-user">
-
-								<a href="#" class="dropdown-menu-user-link">
-									<svg class="feather">
-									  <use xlink:href="img/sprite/feather-sprite.svg#user"/>
-									</svg>
-									<span>Edit profile</span>
-								</a>
-
-								<a href="#" class="dropdown-menu-user-link">
-									<svg class="feather">
-									  <use xlink:href="img/sprite/feather-sprite.svg#settings"/>
-									</svg>
-									<span>Settings</span>
-								</a>
-
-								<div class="divider-line"></div>
-
-								<a href="login.html" class="dropdown-menu-user-link">
-									<svg class="feather">
-									  <use xlink:href="img/sprite/feather-sprite.svg#power"/>
-									</svg>
-									<span>Log out</span>
-								</a>
-
-							</div>
-						</div>
-					</div>	
+				<div class="header__top-line-nav">
+					<a href="#who-we-are" class="header__top-line-nav-link">Who we are</a>
+					<a href="#how-we-do" class="header__top-line-nav-link">How we do it</a>
+					<a href="#why-work" class="header__top-line-nav-link">Why work with us</a>
+					<a href="#contact-us" class="header__top-line-nav-link">Contact us</a>
 				</div>
+
+				<nav role="navigation" id="burger-menu">
+				  <div id="menuToggle">
+				    <input type="checkbox" />
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				    <ul id="menu">
+				      <a href="#who-we-are"><li>Who we are</li></a>
+				      <a href="#how-we-do"><li>How we do it</li></a>
+				      <a href="#why-work"><li>Why work with us</li></a>
+				      <a href="#contact-us"><li>Contact us</li></a>
+				    </ul>
+				  </div>
+				</nav>
+
 			</div>
+
+
+			<div class="header__center-line">
+
+				<h1 class="header__center-line-title">3<span>Digital</span>
+				</h1>
+
+				<p class="header__center-line-subtitle">We deliver  results, leads, sales and conversion</p>
+
+			</div>
+
+			<p class="header__bottom-line">Based in 2016</p>
+
+	</header>
+
+	<section class="what-section" id="who-we-are">
+		
+		<div class="container-custom">
+			
+			<h2 class="section-title">What we do</h2>
+
+			<p class="what-section__description">3DIGITAL is a performance marketing agency that creates high impact online marketing campaigns. By oairing our creative talent with our proprietary technology, we are able to produce measurable results for our partners. We help brans achive scale.</p>
+
+			<div class="what-section__main-img">
+				<img src="img/what-dec-main-img.png" alt="Main Decoration Pic">
+			</div>
+
+			<div class="what-section__second-img">
+				<img src="img/what-dec-second-img.png" alt="Second Decoration Pic">
+			</div>
+
 		</div>
-	</nav>
-	<!-- Navigation Menu End -->
 
-	<!-- Action Buttons Menu Start -->
-	<div class="action-menu">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
-						</svg>
-						<span class="action-menu-item__title">View</span>
-					</a>
+	</section>
 
-					<a href="editor.html" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#edit-2"/>
-						</svg>
-						<span class="action-menu-item__title">Edit</span>
-					</a>
+	<section class="how-section" id="how-we-do">
+		
+		<div class="container-custom">
+			
+			<h2 class="section-title">How we do it</h2>
 
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#edit"/>
-						</svg>
-						<span class="action-menu-item__title">CK</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#copy"/>
-						</svg>
-						<span class="action-menu-item__title">Copy</span>
-					</a>
-
-					<!-- <a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#folder"/>
-						</svg>
-						<span class="action-menu-item__title">Assign folder</span>
-					</a> -->
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
-						</svg>
-						<span class="action-menu-item__title">Delete</span>
-					</a>
-
-					<a href="#" class="action-menu-item">
-						<svg class="feather feather-sm">
-						  <use xlink:href="img/sprite/feather-sprite.svg#upload"/>
-						</svg>
-						<span class="action-menu-item__title">Deploy</span>
-					</a>
-
+			<div class="how__description">
+				
+				<div class="how-description__item">
+					<h3 class="how-description__title">Attract attention</h3>
+					<p class="how-description__text">We develop highly engaging ad copy and creatives that utilizes industry-leading audience targeting</p>
 				</div>
+
+				<div class="how-description__item">
+					<h3 class="how-description__title">Produce results</h3>
+					<p class="how-description__text">Our media buying team maximizes conversions by leveraging in-house technology to discover campaign insights that are invisible to most marketers</p>
+				</div>
+
+				<div class="how-description__item">
+					<h3 class="how-description__title">Evoke emotion</h3>
+					<p class="how-description__text">Our marketing material is designed to trigger primal emotions, creating an immediate need to take action</p>
+				</div>
+
 			</div>
+
 		</div>
-	</div>
-	<!-- Action Buttons Menu End -->
 
-	<!-- Card Start -->
-	<div class="custom-card-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					
-					<div class="custom-card">
-						
-						<div class="custom-card__header">
+	</section>
 
-							<!-- <h1 class="custom-card__title">Landers</h1> -->
+	<section class="why-section" id="why-work">
 
-							<div class="custom-card__header-btngroup">
+		<img src="img/why-dec.png" alt="Decoratin Pic" class="why-section__decoration">
+		
+		<div class="container-custom">
+			
+			<h2 class="section-title">Why work with us</h2>
 
-								<div class="dropdown show">
-
-									<a href="#" class="custom-card__header-btn" id="view-link" href="#">
-										<svg class="feather feather-lg">
-										  <use xlink:href="img/sprite/feather-sprite.svg#grid"/>
-										</svg>
-										<span class="custom-card__header-btn-title" id="view-title">Main View</span>
-										<input class="view-input" type="text" value="Main View" style="display: none">
-									</a>
-
-									<div class="dropdown-menu dropdown-menu-view">
-
-										<a href="#" class="dropdown-menu-view__item dropdown-menu-view__item--active">
-											<svg class="feather feather-lg">
-											  <use xlink:href="img/sprite/feather-sprite.svg#grid"/>
-											</svg>
-											<span class="custom-card__header-btn-title" id="view-sub-title">Main View</span>
-										</a>
-
-										<a href="#" class="dropdown-menu-view__item">
-											<svg class="feather feather-lg">
-											  <use xlink:href="img/sprite/feather-sprite.svg#layers"/>
-											</svg>
-											<span class="custom-card__header-btn-title">Test View 1</span>
-										</a>
-
-										<a href="#" class="dropdown-menu-view__item">
-											<svg class="feather feather-lg">
-											  <use xlink:href="img/sprite/feather-sprite.svg#list"/>
-											</svg>
-											<span class="custom-card__header-btn-title">Test View 2</span>
-										</a>
-
-									</div>
-								</div>
-
-								<div class="dropdown show">
-
-									<a href="#" class="custom-card__header-btn" id="more-link">
-										<svg class="feather feather-lg">
-										  <use xlink:href="img/sprite/feather-sprite.svg#more-vertical"/>
-										</svg>
-									</a>
-
-									<div class="dropdown-menu dropdown-menu-more">
-										
-										<a href="#" class="dropdown-menu-view__item">
-											<svg class="feather feather-lg">
-											  <use xlink:href="img/sprite/feather-sprite.svg#plus-circle"/>
-											</svg>
-											<span class="custom-card__header-btn-title">Add view</span>
-										</a>
-
-										<a href="#" class="dropdown-menu-view__item" id="rename-view-btn">
-											<svg class="feather feather-lg">
-											  <use xlink:href="img/sprite/feather-sprite.svg#edit-3"/>
-											</svg>
-											<span class="custom-card__header-btn-title">Rename view</span>
-										</a>
-
-										<a href="#" class="dropdown-menu-view__item">
-											<svg class="feather feather-lg">
-											  <use xlink:href="img/sprite/feather-sprite.svg#copy"/>
-											</svg>
-											<span class="custom-card__header-btn-title">Duplicate view</span>
-										</a>
-
-										<a href="#" class="dropdown-menu-view__item">
-											<svg class="feather feather-lg">
-											  <use xlink:href="img/sprite/feather-sprite.svg#save"/>
-											</svg>
-											<span class="custom-card__header-btn-title">Save current view</span>
-										</a>
-
-										<a href="#" class="dropdown-menu-view__item">
-											<svg class="feather feather-lg">
-											  <use xlink:href="img/sprite/feather-sprite.svg#trash"/>
-											</svg>
-											<span class="custom-card__header-btn-title">Delete view</span>
-										</a>
-
-									</div>
-								</div>
-
-								<div class="dropdown show">
-								
-									<a href="#" class="custom-card__header-btn" id="filter-link">
-										<svg class="feather feather-lg">
-										  <use xlink:href="img/sprite/feather-sprite.svg#sliders"/>
-										</svg>
-										<span class="custom-card__header-btn-title">Filter</span>
-									</a>
-
-									<div class="dropdown-menu dropdown-menu-filter">
-										
-										<div class="dropdown-menu-filter__single-filter">
-											<a href="#" class="remove-filter-btn">
-												<svg class="feather feather-lg">
-												  <use xlink:href="img/sprite/feather-sprite.svg#x-circle"/>
-												</svg>
-											</a>
-												<span>Where</span>
-												<select name="fieldselect" id="fieldselect">
-													<option value="Date created">Date created</option>
-													<option value="Lander name">Lander name</option>
-													<option value="Template">Template</option>
-													<option value="Tags">Tags</option>
-													<option value="Last edited">Last edited</option>
-												</select>
-												<select name="optionselect" id="optionselect">
-													<option value="contains">contains</option>
-													<option value="does not contain">doesn't contain</option>
-													<option value="is">is</option>
-													<option value="is not">isn't</option>
-													<option value="is empty">is empty</option>
-													<option value="is not empty">isn't empty</option>
-												</select>
-												<input type="text" class="filter-input">
-										</div>
-
-										<div class="dropdown-menu-filter__addfilter">
-											<a href="#" class="remove-filter-btn">
-												<svg class="feather feather-lg">
-												  <use xlink:href="img/sprite/feather-sprite.svg#plus"/>
-												</svg>
-												<span>Add filter</span>
-											</a>
-										</div>
-
-									</div>
-								</div>
-								
-								<div class="dropdown show">
-
-									<a href="#" class="custom-card__header-btn" id="sort-link">
-										<svg class="feather feather-lg">
-										  <use xlink:href="img/sprite/feather-sprite.svg#shuffle"/>
-										</svg>
-										<span class="custom-card__header-btn-title">Sort</span>
-									</a>
-
-									<div class="dropdown-menu dropdown-menu-sort">
-										
-										<div class="dropdown-menu-sort__single-sort">
-											<span>Sort by</span>
-											<select class="custom-select" name="fieldselect" id="fieldselect">
-												<option value="Date created">Date created</option>
-												<option value="Lander name">Lander name</option>
-												<option value="Template">Template</option>
-												<option value="Tags">Tags</option>
-												<option value="Last edited">Last edited</option>
-											</select>
-											<span>from</span>
-											<div class="can-toggle can-toggle--size-small">
-												<input id="a" type="checkbox">
-												<label for="a">
-											    	<div class="can-toggle__switch" data-checked="Z &rarr; A" data-unchecked="A &rarr; Z"></div>
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="custom-card__body">
-
-							<table class="table custom-table" id="example">
-							  <thead>
-							    <tr class="landers-tr">
-							      <th scope="col" class="no-sort"></th>
-							      <th scope="col">Date created</th>
-							      <th scope="col">Lander name</th>
-							      <th scope="col">Template</th>
-							      <th scope="col">Tags</th>
-							      <th scope="col">Last edited</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check1" name="check" />
-								      <label for="check1"></label>
-								    </div>
-							      </td>
-							      <td>00 days</td>
-							      <td>Granny-drive OLT-1</td>
-							      <td>Online24 - AR**</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      	<div class="tag tag--green">tag 3</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check2" name="check" />
-								      <label for="check2"></label>
-								    </div>
-							      </td>
-							      <td>00 days</td>
-							      <td>Granny-drive OLT-2</td>
-							      <td>Online24 - AR**</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check3" name="check" />
-								      <label for="check3"></label>
-								    </div>
-							      </td>
-							      <td>00 days</td>
-							      <td>Granny-drive OLT-3</td>
-							      <td>Online24 - AR**</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check4" name="check" />
-								      <label for="check4"></label>
-								    </div>
-							      </td>
-							      <td>00 days</td>
-							      <td>Drive-Granny BR 1</td>
-							      <td>Online24 - BR</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check5" name="check" />
-								      <label for="check5"></label>
-								    </div>
-							      </td>
-							      <td>00 days</td>
-							      <td>Drive-Granny BR 2</td>
-							      <td>Online24 - BR</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      	<div class="tag tag--green">tag 3</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check6" name="check" />
-								      <label for="check6"></label>
-								    </div>
-							      </td>
-							      <td>00 days</td>
-							      <td>Drive-Granny BR 3</td>
-							      <td>Online24 - BR</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check7" name="check" />
-								      <label for="check7"></label>
-								    </div>
-							      </td>
-							      <td>00 days</td>
-							      <td>Ukraine prankCM HL1</td>
-							      <td>Online24 - Ukraine (Ukranian)</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      </td>
-							      <td>H</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check8" name="check" />
-								      <label for="check8"></label>
-								    </div>
-							      </td>
-							      <td>00 days</td>
-							      <td>TEST</td>
-							      <td>Online24 - FI</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      	<div class="tag tag--green">tag 3</div>
-							      </td>
-							      <td>H</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check9" name="check" />
-								      <label for="check9"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>fb_survey_german</td>
-							      <td>fb_survey_english</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      	<div class="tag tag--green">tag 3</div>
-							      </td>
-							      <td>George</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check10" name="check" />
-								      <label for="check10"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>Malaysia</td>
-							      <td>Business Insider - Olymptrade</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      </td>
-							      <td>George</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check11" name="check" />
-								      <label for="check11"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>MAL3</td>
-							      <td>Business Insider - MY - Video</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      </td>
-							      <td>George</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check12" name="check" />
-								      <label for="check12"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>Drive-Granny CH-FR 1</td>
-							      <td>Online24 - CHFR</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check13" name="check" />
-								      <label for="check13"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>Italy PrankCM HL1</td>
-							      <td>Online24 - Italy</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      	<div class="tag tag--green">tag 3</div>
-							      </td>
-							      <td>H</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check14" name="check" />
-								      <label for="check14"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>SWEDEN PrankCM HL1</td>
-							      <td>Online24 - Sweden</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      </td>
-							      <td>H</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check15" name="check" />
-								      <label for="check15"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>SG PorscheOT warning HL1</td>
-							      <td>Business Insider - SG</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      </td>
-							      <td>H</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check16" name="check" />
-								      <label for="check16"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>ZA PorscheOT warning HL1</td>
-							      <td>Online24 - ZA</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      </td>
-							      <td>H</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check17" name="check" />
-								      <label for="check17"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>Prank UAE OT CM</td>
-							      <td>Online24 - UAE (Olymptrade)</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      	<div class="tag tag--green">tag 3</div>
-							      </td>
-							      <td>H</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check18" name="check" />
-								      <label for="check18"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>Drive-Granny ZA 1</td>
-							      <td>Online24 - ZA</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check19" name="check" />
-								      <label for="check19"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>Drive-Granny ZA 2</td>
-							      <td>Online24 - ZA</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      	<div class="tag tag--green">tag 3</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							    <tr class="landers-tr">
-							      <td scope="row">	
-								    <div class="custom-checkbox">
-								      <input class="custom-checkbox-input" type="checkbox" value="None" id="check20" name="check" />
-								      <label for="check20"></label>
-								    </div>
-							      </td>
-							      <td>01 days</td>
-							      <td>Drive-Granny ZA 3</td>
-							      <td>Online24 - ZA</td>
-							      <td class="tag-cell">
-							      	<div class="tag tag--blue">tag 1</div>
-							      	<div class="tag tag--yellow">tag 2</div>
-							      	<div class="tag tag--green">tag 3</div>
-							      </td>
-							      <td>Alex</td>
-							    </tr>
-
-							  </tbody>
-							</table>
-
-						</div>
+			<div class="why-section__card">
+				
+				<div class="why-section__card-item">
+					<div class="why-section__card-item-img">
+						<img src="img/creativity.png" alt="Creativity Pic">
+					</div>
+					<div class="why-section__card-text">
+						<h3 class="why-section__card-text-title">Creativity</h3>
+						<p class="why-section__card-text-description">Our media buying team maximizes conversions by leveraging in-house technology to discover campaign insights that are invisible to most marketers</p>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Card End -->
 
+				<div class="why-section__card-item">
+					<div class="why-section__card-item-img">
+						<img src="img/technologies.png" alt="Technologies Pic">
+					</div>
+					<div class="why-section__card-text">
+						<h3 class="why-section__card-text-title">Technologies</h3>
+						<p class="why-section__card-text-description">Our media buying team maximizes conversions by leveraging in-house technology to discover campaign insights that are invisible to most marketers</p>
+					</div>
+				</div>
+
+				<div class="why-section__card-item why-section__card-item--margin">
+					<div class="why-section__card-item-img">
+						<img src="img/data.png" alt="Data Pic">
+					</div>
+					<div class="why-section__card-text">
+						<h3 class="why-section__card-text-title">Data & Analytics</h3>
+						<p class="why-section__card-text-description">Our media buying team maximizes conversions by leveraging in-house technology to discover campaign insights that are invisible to most marketers</p>
+					</div>
+				</div>
+
+				<div class="why-section__card-item why-section__card-item--margin">
+					<div class="why-section__card-item-img">
+						<img src="img/relationship.png" alt="Relationship Pic">
+					</div>
+					<div class="why-section__card-text">
+						<h3 class="why-section__card-text-title">Relationship</h3>
+						<p class="why-section__card-text-description">Our media buying team maximizes conversions by leveraging in-house technology to discover campaign insights that are invisible to most marketers</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="contact-section" id="contact-us">
+		
+		<div class="container-custom">
+		
+			<h2 class="section-title">Contact us</h2>
+
+			<form action="#" class="contact-section__form">
+				<input type="text" class="contact-section__form-input" placeholder="Name">
+				<input type="text" class="contact-section__form-input" placeholder="Company">
+				<input type="text" class="contact-section__form-input" placeholder="Email">
+				<input type="text" class="contact-section__form-input contact-section__form-input--margin" placeholder="Phone">
+				<input type="text" class="contact-section__form-input contact-section__form-input--margin" placeholder="Subject">
+				<select name="Message" id="test-select" class="contact-section__form-input contact-section__form-input--margin">
+					<option value="Message">Message</option>
+					<option value="Test option">Test option</option>
+				</select>
+				<!-- <input type="submit" class="contact-section__form-submit" value="Send message"> -->
+
+				<a href="#" class="btn btn-1">
+			      <svg>
+			        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+			      </svg>
+			     Send message
+			    </a>
+			</form>
+
+		</div>
+
+	</section>
+
+	<footer class="footer">
+		
+		<div class="container-custom">
+	
+			<a href="#" class="footer__top-line-logo">3DIGITAL LOGO</a>
+
+			<div class="footer__top-line-nav">
+				<a href="#who-we-are" class="footer__nav-link">Who we are</a>
+				<a href="#how-we-do" class="footer__nav-link">How we do it</a>
+				<a href="#why-work" class="footer__nav-link">Why work with us</a>
+				<a href="#contact-us" class="footer__nav-link">Contact us</a>
+			</div>
+
+			<a href="#" class="footer__phone">+1-111-111-11</a>
+
+		</div>
+
+	</footer>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 
 </body>
