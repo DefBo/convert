@@ -150,7 +150,7 @@
 						
 						<ul id="sortable">
 						
-							<li class="content-editor__section content-editor__section--text">
+							<li class="content-editor__section content-editor__section--text" id="0">
 								<h4 class="content-editor__section-title">
 									<span class="content-editor__section-number">01</span>
 									Text section
@@ -161,24 +161,18 @@
 								<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
 								<div class="content-editor__section-buttons">
 									<div class="content-editor__section-button lock-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#lock"/>
-										</svg>
+                    <img src="img/icons/lock.svg" alt="">
 									</div>
 									<div class="content-editor__section-button display-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
-										</svg>
+                    <img src="img/icons/eye.svg" alt="">
 									</div>
 									<div class="content-editor__section-button delete-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
-										</svg>
+                    <img src="img/icons/x.svg" alt="">
 									</div>
 								</div>
 							</li>
 
-							<li class="content-editor__section content-editor__section--image">
+							<li class="content-editor__section content-editor__section--image" id="1">
 								<h4 class="content-editor__section-title">
 									<span class="content-editor__section-number">02</span>
 									Image section
@@ -189,24 +183,18 @@
 								<img src="img/samplepic.png" alt="Pic">
 								<div class="content-editor__section-buttons">
 									<div class="content-editor__section-button lock-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#lock"/>
-										</svg>
+                    <img src="img/icons/lock.svg" alt="">
 									</div>
 									<div class="content-editor__section-button display-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
-										</svg>
+                    <img src="img/icons/eye.svg" alt="">
 									</div>
 									<div class="content-editor__section-button delete-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
-										</svg>
+                    <img src="img/icons/x.svg" alt="">
 									</div>
 								</div>
 							</li>
 
-							<li class="content-editor__section content-editor__section--html">
+							<li class="content-editor__section content-editor__section--html" id="2">
 								<h4 class="content-editor__section-title">
 									<span class="content-editor__section-number">03</span>
 									HTML section
@@ -228,19 +216,13 @@ echo $tracking;
 								</form>
 								<div class="content-editor__section-buttons">
 									<div class="content-editor__section-button lock-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#lock"/>
-										</svg>
+                    <img src="img/icons/lock.svg" alt="">
 									</div>
 									<div class="content-editor__section-button display-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
-										</svg>
+                    <img src="img/icons/eye.svg" alt="">
 									</div>
 									<div class="content-editor__section-button delete-button">
-										<svg class="feather">
-										  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
-										</svg>
+                    <img src="img/icons/x.svg" alt="">
 									</div>
 								</div>
 
@@ -264,7 +246,9 @@ echo $tracking;
               
                 <img class="image-button" src="img/icons/image.svg" alt="Image">
              
-              </div>  
+              </div> 
+
+              <input type="file" id="image-section-uploader">
 
             </div>
 						
@@ -305,66 +289,48 @@ echo $tracking;
 							<div class="aside-card__item" style="margin-top: -10px">
 								<h2 class="aside-card__title">Sections</h2>
 								<div class="aside-card__info aside-card__info--section-list">
-									<a href="#" class="aside-card__section-item">
+									<a href="#" class="aside-card__section-item" id="0">
 										<span class="aside-card__section-number">01</span>
 										<span class="aside-card__section-name">Text section</span>
 										<span class="aside-card__section-buttons">
 											<span class="aside-card__section-lock lock-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#lock"/>
-												</svg>
+                        <img src="img/icons/lock.svg" alt="">
 											</span>
 											<span class="aside-card__section-hide display-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
-												</svg>
+                        <img src="img/icons/eye.svg" alt="">
 											</span>
 											<span class="aside-card__section-close delete-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
-												</svg>
+                        <img src="img/icons/x.svg" alt="">
 											</span>
 										</span>
 									</a>
-									<a href="#" class="aside-card__section-item">
+									<a href="#" class="aside-card__section-item" id="1">
 										<span class="aside-card__section-number">02</span>
 										<span class="aside-card__section-name">Image section</span>
 										<span class="aside-card__section-buttons">
 											<span class="aside-card__section-lock lock-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#lock"/>
-												</svg>
+                        <img src="img/icons/lock.svg" alt="">
 											</span>
 											<span class="aside-card__section-hide display-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
-												</svg>
+                        <img src="img/icons/eye.svg" alt="">
 											</span>
 											<span class="aside-card__section-close delete-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
-												</svg>
+                        <img src="img/icons/x.svg" alt="">
 											</span>
 										</span>
 									</a>
-									<a href="#" class="aside-card__section-item">
+									<a href="#" class="aside-card__section-item" id="2">
 										<span class="aside-card__section-number">03</span>
 										<span class="aside-card__section-name">HTML section</span>
 										<span class="aside-card__section-buttons">
 											<span class="aside-card__section-lock lock-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#lock"/>
-												</svg>
+                        <img src="img/icons/lock.svg" alt="">
 											</span>
 											<span class="aside-card__section-hide display-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#eye"/>
-												</svg>
+                        <img src="img/icons/eye.svg" alt="">
 											</span>
 											<span class="aside-card__section-close delete-button">
-												<svg class="feather">
-												  <use xlink:href="img/sprite/feather-sprite.svg#x"/>
-												</svg>
+                        <img src="img/icons/x.svg" alt="">
 											</span>
 										</span>
 									</a>
@@ -391,7 +357,9 @@ echo $tracking;
 	</div>
 	<!-- Card End -->
 
-	<script src="js/scripts.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <!-- <script src="libs/jquery/dist/jquery.min.js"></script> -->
+  <!-- <script src="js/common.js"></script> -->
 	<script>
 	$( function() {
 		$( "#sortable" ).sortable({
